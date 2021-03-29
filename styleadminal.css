@@ -1,0 +1,371 @@
+/* Ez a CSS fájl a ADMIN AL oldalak megjelenésének részleteit tartalmazza */
+/* font-family:Copperplate; */
+/* https://weblapdesign.hu/webgrafika/szinatmenet-css-segitsegevel/ */
+
+/* AZ ADMIN al OLDALAK MEGJELENÉSE */
+/* Keret */
+#keret{
+margin-left: auto;
+margin-right:auto;
+width: 90%;
+height:auto;
+box-shadow: 3px 3px 3px 3px darkgray;
+background: linear-gradient(45deg,  rgba(30,87,153,1) 0%,rgba(125,185,232,0) 100%);
+}
+
+*{
+font-family: sans-serif;	
+}
+
+/* Fejléce. Automatikusan növekszik a betűmérettel */
+#fejlec{
+height: auto;
+width: 100%;
+background-color:#646b16;	
+font-size:60px;
+text-align:center;	
+clear: both;
+background: linear-gradient(45deg,  rgba(125,185,232,0) 0%,rgba(30,87,153,1) 100%);
+}
+
+/* Belejelentkezési sáv ahol a felhasználó neve van */
+#bejelentkezesisav{
+height: auto;
+width: 100%;	
+font-size:20px;
+text-align:center;	
+clear: both;
+}
+
+
+/* Egyelőre csak a kategória felvitel menüt oszottam ezzel ketté! */
+#felso{
+height: auto;
+width: 100%;	
+font-size:20px;
+text-align:left;	
+clear: both;
+margin-bottom:10px;	
+}
+
+/* Egyelőre csak a kategória felvitel menüt oszottam ezzel ketté! */
+#also{
+height: auto;
+width: 100%;	
+font-size:20px;
+text-align:left;	
+clear: both;	
+margin-bottom:10px;	
+}
+
+
+/* Termék módosító oldalon a kis gombsor */
+#szurogombsor{
+height: 40px;
+background-color: #7d94ba;
+border-radius: 10px;
+border: 1px solid black;	
+
+}
+
+/* Termék módosító oldalon a kis gombok! */
+.gombkis{
+width: 240px;	
+margin-top: 4px;
+margin-left: 4px;
+text-decoration: none;
+color: black;
+font-size: 20px;
+float:left;
+padding-top: 3px;
+padding-right: 6px;
+padding-bottom: 3px;
+padding-left: 6px;	
+}
+
+/* Jelenleg nincs használatban , de a termék módosító oldalhoz volt */
+.gombkisharmada{
+width: 34px;	
+margin-top: 4px;
+margin-left: 4px;
+text-decoration: none;
+color: black;
+font-size: 20px;
+float:left;
+padding-top: 3px;
+padding-right: 6px;
+padding-bottom: 3px;
+padding-left: 6px;			
+}
+
+
+
+/* Termék módosító oldalon a gombokra menve*/ 
+.gombkis:hover{
+background-color:#cbdaf2;
+color:black;
+border-radius: 10px;
+box-shadow: 1px 1px 1px 1px darkgray;
+}
+
+
+/* Gombok maguk */ 
+.gomb{
+margin-top: 10px;
+margin-left: 10px;
+text-decoration: none;
+color: black;
+font-size: 22px;
+float:left;
+padding-top: 5px;
+padding-right: 15px;
+padding-bottom: 5px;
+padding-left: 15px;
+}
+
+/* A megnyomott gomb vizuális visszajelzése */
+.gomb:hover{
+background-color:#cbdaf2;
+color:black;
+border-radius: 10px;
+box-shadow: 1px 1px 1px 1px darkgray;
+}
+
+/* Az űrlapok elküldésénél használt típus formázása! */
+input[type=button], input[type=submit], input[type=reset] {
+  background-color: #98d2d6;
+  border: none;
+  color: black;
+  font-size:14px;
+  padding: 9px 15px;
+  text-decoration: none;
+  margin: 1px 1px;
+  cursor: pointer;
+  border-radius: 10px;
+  border: 1px black solid;
+}
+
+/* A LÁBLÉC */
+#lablec{
+height: 100px;
+padding-top: 20px;
+color: black;
+font-size:15px;
+text-align:center;
+clear: both;
+background: linear-gradient(45deg,  rgba(125,185,232,0) 0%,rgba(30,87,153,1) 100%);
+}
+
+/* Ez egy állapot visszajelző sáv megformázása! A beviteli mezők és bejelentkezési adatok (sáv) között van! */
+#allapotjelzo{
+color: black;
+height: auto;
+width: 100%;	
+font-size:30px;
+text-align:center;	
+clear: both;
+text-shadow: -4px -2px 5px rgba(255, 221, 0, 1);
+}
+
+
+
+/* A FELHASZNÁLÓ FELVITELE és TERMÉK felvétele al-admin oldal beviteli mezői , egyedik megjelenésének beállításai: */
+input[type=text]{
+font-size: 15px;
+width:98%;
+height:30px;
+border:1px solid black;
+border-radius:3px;
+}
+
+/* Felhasználó felvitele beviteli mezők : */
+input[type=number]{
+font-size: 15px;
+width:98%;
+height:30px;
+border:1px solid black;
+border-radius:3px;
+}
+
+input[type=password]{
+font-size: 15px;
+width:98%;
+height:30px;
+border:1px solid black;
+border-radius:3px;
+}
+
+
+input[type=email]{
+font-size: 15px;
+width:98%;
+height:30px;
+border:1px solid black;
+border-radius:3px;	
+}
+
+
+/* Termék felviteli mező nagy méret a sok szöveg miatt! */
+textarea{
+font-size: 15px;
+width : 98%;
+height : 500px;
+border:1px solid black;
+border-radius:3px;
+}
+
+
+/* Felhasználó és termékkereső és felhasználó beviteli mezők formázása. Ezek rövidebbek mint a felviteli mezők és más a betűméret is */
+input[type=text].keresomezo{
+font-size:20px;
+width:40%;
+height:30px;
+border:1px solid black;
+border-radius:3px;	
+}
+
+input[type=number].keresomezo{
+font-size:20px;
+width:40%;	
+height:30px;
+border:1px solid black;
+border-radius:3px;
+}
+
+input[type=email].keresomezo{
+font-size:20px;
+width:40%;	
+height:30px;
+border:1px solid black;
+border-radius:3px;		
+}
+
+input[type=password].keresomezo{
+font-size:20px;
+width:40%;	
+height:30px;
+border:1px solid black;
+border-radius:3px;		
+}
+
+
+/* A felhasználók lisázásakor megjelenített táblázatok általános formázásáa! */
+table{
+text-align: left;
+border: 5px solid black;
+border-radius:3px;
+font-size:20px;	
+width: 50px;
+text-align: center;
+}
+
+th{
+text-align: left;
+border: 1px solid black;
+border-radius:3px;
+font-size:20px;	
+width: 20px	
+}
+
+tr{
+width : 10px;
+border: 1px solid black;
+
+}
+
+td{
+width: 10px;
+border: 1px solid black;	
+}
+
+	
+/* Saját mező kialakítása termék listázásnál: Ide egy termék leírása kerül bele. Jelenleg a túlnyúló szöveg nem megoldott , ez a leírás */
+#termekmezo{
+width: 98%;
+height:auto;	
+float:left;
+clear: both;
+border: 6px outset lightgrey;
+margin: 6px;
+}
+
+/* a termékmező jobb oldala */
+#termekmezojobboldal{
+float: right;	
+width: 40%;
+border: 1px outset white;
+}
+
+/* A termékmező bal oldala */ 
+#termekmezobaloldal{
+float: left;	
+width : 55%;
+border: 1px outset white;
+/*overflow: scroll;*/
+word-break: break-all;
+}
+
+/* A felhasználókat listázó mező formázása */
+#felhasznalomezo{
+width: 98%;
+height:auto;	
+float:left;
+clear: both;
+border: 6px outset lightgrey;
+margin: 6px;		
+}
+
+/* Az admin felületen keresett termék kép szélességég a grafikai elrendezést leíró rész */
+.adminlistazokep{
+width:130px;
+border: 2px groove gray;
+margin: 3px;
+}
+
+
+table.termeklistazotablazat{
+width:20%;
+height:30%;
+border: 10px solid yellow;
+max-height:100px;
+overflow-y: auto;
+font-size:15px;
+}
+
+
+table.termeklistazotablazat tbody tr:nth-child(1) td:nth-child(5){
+overflow: auto;
+background-color:red;
+max-height:100px;
+font-size:3px;
+}
+
+
+
+#eladott-termek-sav{
+width: 100%;
+max-height:500px;	
+border: 1px solid black;
+background-color:#8ed3e8;	
+font-size: 70%;	
+float:left;
+clear: both;
+word-break: break-all;
+}
+
+#eladott-termek-sav-baloldal{
+float: left;
+width: 49%;
+height:90%;
+word-break: break-all;
+background-color:#e3f5da;
+
+}
+
+#eladott-termek-sav-jobboldal{
+float: right;
+width: 49%;	
+height:90%;
+word-break: break-all;
+background-color:#dae0f5 ;
+}

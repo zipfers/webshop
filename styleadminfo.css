@@ -1,0 +1,79 @@
+/* Ez a CSS fájl a ADMIN FŐ oldal megjelenésének részleteit tartalmazza. A gombsorokkal , a gombokkal */
+/* font-family:Copperplate; */
+/* https://weblapdesign.hu/webgrafika/szinatmenet-css-segitsegevel/ WebDesign segédanyag */
+
+#keret{
+margin-left: auto;
+margin-right:auto;
+width: 90%;
+box-shadow: 3px 3px 3px 3px darkgray;
+background: linear-gradient(45deg,  rgba(30,87,153,1) 0%,rgba(125,185,232,0) 100%);
+}
+
+#fejlec{
+height: auto;
+background-color:#7ca37a;	
+font-size:45px;
+text-align:center;	
+clear: both;
+}
+
+/* Az ADMIN fő oldal gomb sávjai */
+#felhasznalogombsor{
+height: 70px;
+background-color: #7d94ba;
+border-radius: 10px;
+border: 1px solid black;
+}
+
+#termekgombsor{
+height: 70px;
+background-color: #7d94ba;
+border-radius: 10px;
+border: 1px solid black;
+}
+
+#kategoriagombsor{
+height: 70px;
+background-color: #7d94ba;
+border-radius: 10px;
+border: 1px solid black;
+}
+
+#archivumgombsor{
+height: 70px;
+background-color: #7d94ba;
+border-radius: 10px;
+border: 1px solid black;
+}
+
+/* A gombok maguk */
+.gomb{
+margin-top: 10px;
+margin-left: 10px;
+text-decoration: none;
+color: white;
+font-size: 22px;
+float:left;
+padding-top: 5px;
+padding-right: 15px;
+padding-bottom: 5px;
+padding-left: 15px;
+}
+
+.gomb:hover{
+background-color:#cbdaf2;
+color:black;
+border-radius: 10px;
+}
+
+#lablec{
+height: 80px;
+background-color: #7ca37a;
+padding-top: 20px;
+color: black;
+font-size:15px;
+text-align:center;
+clear: both;
+border: 1px solid gray;		
+}
